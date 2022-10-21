@@ -38,7 +38,7 @@ class _GameState extends ConsumerState<TwoThousandFortyEight>
 
   //The contoller used to show a popup effect when the tiles get merged
   late final AnimationController _scaleController = AnimationController(
-    duration: const Duration(milliseconds: 200),
+    duration: const Duration(milliseconds: 400),
     vsync: this,
   )..addStatusListener((status) {
       //When the scale animation finishes end the round and if there is a queued movement start the move controller again for the next direction.

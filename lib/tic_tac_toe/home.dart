@@ -1,5 +1,6 @@
 import "package:flutter/material.dart";
 import 'package:neon_widgets/neon_widgets.dart';
+import 'package:offline_games/home.dart';
 import "game.dart";
 import 'package:neon/neon.dart';
 
@@ -141,7 +142,8 @@ class _TicTacToeState extends State<TicTacToe> {
             padding: const EdgeInsets.only(top: 20),
             child: TextButton(
               onPressed: () {
-                Navigator.pop(context);
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => HomePage()));
               },
               child: Neon(
                 text: "Çık",
